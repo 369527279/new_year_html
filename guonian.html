@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>2018年除夕倒计时</title>
+   <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+        content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0;viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="./guonian.css">
+    <link rel="stylesheet" type="text/css" href="./dong.css">
+
+    <script type="text/javascript" src="./guonian.js">  </script>
+    <script type="text/javascript" src="./rili.js">  </script>
+</head>
+
+<body>
+    <div style="display: none;">
+
+        <audio id="musicfc" style="width:0;height:0;display:none;" autoplay="autoplay" loop="loop" id="mp3">
+            <source src="./111.mp3" crossOrigin="anonymous" type="audio/mp3">
+        </audio>
+    </div>
+
+    <div class="main">
+        <div class="juli"><span id="jintian"></span></div>
+        <div class="juli2">距离2022年1月31日&nbsp;&nbsp;除夕还有</div>
+        <div class="juli3"><span id="juli"></span></div>
+        <!-- <div class="time" id="time"> </div> -->
+    </div>
+
+</body>
+<script type="text/javascript">
+    function pplay() {
+        var audio = document.getElementById('musicfc'),
+            play = function () {
+                audio.play();
+                audio.volume = 1.0;
+                document.removeEventListener("touchstart", play, false);
+            };
+
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            play();
+        }, false);
+        document.addEventListener('YixinJSBridgeReady', function () {
+            play();
+        }, false);
+        document.addEventListener("touchstart", play, false);
+        setTimeout(() => {
+            audio.pause()
+            audio.load();
+            audio.play();
+        }, 2000);
+    }
+
+
+</script>
+<script type="text/javascript" src="./guojierili.js">  </script>
+
+</html>

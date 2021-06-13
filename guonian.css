@@ -1,0 +1,83 @@
+body {
+     background: #00FF00 url(bg.jpg); 
+    background-color: #464646;
+}
+
+body {
+    /* 背景图垂直、水平均居中 */
+    background-position: center center;
+    /* 背景图不平铺 */
+    background-repeat: no-repeat;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+    /* 设置背景颜色，背景图加载过程中会显示背景色 */
+    background-color: #464646;
+}
+
+html,
+body {
+    overflow: hidden;
+    margin: 0;
+    font-size: 36px;
+}
+
+html {
+    background: #14191C;
+}
+
+p {
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+}
+
+/**-------------------div样式-----------------*/
+.main {
+    width: 100%;
+    margin: 30px 0 0 0; 
+    position: absolute; 
+    text-align: left;
+}
+
+.juli {
+    color: #FFFFFF;
+    text-indent: 16;
+    width: 100%; 
+    position: relative;
+    font-size:0.5em;
+
+}
+.juli2{
+    color: #FFFFFF;
+    text-indent: 16;
+    width: 100%; 
+    position: relative;
+    font-size:0.6em;
+    margin-top: 0.8em;
+}
+
+.juli3{
+    color: #FFFFFF;
+    text-indent: 16;
+    width: 100%; 
+    position: relative;
+    font-size:0.9em;
+    margin-top: 0.5em;
+}
+
+.time {
+    color: #F6CB3F;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.second {
+    font-size: 14px;
+}

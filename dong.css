@@ -1,0 +1,23 @@
+/* start */
+.my-face {
+    animation: my-face 1s infinite ease-in-out;
+    color: red;
+    display: inline-block;
+    text-shadow: 1px 1px white,-1px -1px white, 1px -1px white, -1px 1px white;
+    margin-left: -5px;
+}
+ 
+@keyframes my-face {
+    20% {
+         -webkit-transform: translate(0, 1px) rotate(1deg);
+         transform: translate(0, 1px) rotate(1deg)
+     }
+   
+     90% {
+        -webkit-transform: translate(0, 1px) rotate(100deg);
+        transform: translate(0, 1px) rotate(100deg);
+        opacity:0.2;
+    }
+  
+}
+/* end */
